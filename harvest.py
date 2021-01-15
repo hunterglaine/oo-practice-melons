@@ -34,23 +34,23 @@ def make_melon_types():
     
     all_melon_types = []
 
-    melon_1 = MelonType('musk', 1998, 'green', True, True, 
+    musk = MelonType('musk', 1998, 'green', True, True, 
                  'Muskmelon')
-    melon_1.add_pairing('mint')
-    all_melon_types.append(melon_1)
+    musk.add_pairing('mint')
+    all_melon_types.append(musk)
 
-    melon_2 = MelonType('cas', 2003, 'orange', False, False, 
+    cas = MelonType('cas', 2003, 'orange', False, False, 
                  'Casaba')
-    melon_2.add_pairing('strawberries','mint')
-    all_melon_types.append(melon_2)
+    cas.add_pairing('strawberries','mint')
+    all_melon_types.append(cas)
     
-    melon_3 = MelonType("cren", 1996, "green", False, False, "Crenshaw")
-    melon_3.add_pairing("proscuitto")
-    all_melon_types.append(melon_3) 
+    cren = MelonType("cren", 1996, "green", False, False, "Crenshaw")
+    cren.add_pairing("proscuitto")
+    all_melon_types.append(cren) 
 
-    melon_4 = MelonType("yw", 2013, "yellow", False, True, "Yellow Watermelon")
-    melon_4.add_pairing("ice cream")
-    all_melon_types.append(melon_4) 
+    yw = MelonType("yw", 2013, "yellow", False, True, "Yellow Watermelon")
+    yw.add_pairing("ice cream")
+    all_melon_types.append(yw) 
     
     return all_melon_types
 
