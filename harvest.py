@@ -94,7 +94,11 @@ class Melon(object):
         self. harvest_field = harvest_field
         self.harvested_by = harvested_by
     
-    # Needs __init__ and is_sellable methods
+
+    def is_sellable(self):
+    
+        if self.shape_rating > 5 and self.color_rating > 5 and self.harvest_field != 3:
+            self.sellable = True
 
 def make_melons(melon_types):
     """Returns a list of Melon objects."""
